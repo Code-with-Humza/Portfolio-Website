@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Hamza Saeed, an Information Technology student and aspiring Full Stack Web Developer."
+    />
+    <title>Hamza Saeed | Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <aside class="sidebar" id="mobileSidebar" aria-label="Primary sidebar" aria-hidden="true">
+      <div class="sidebar-inner">
+        <div class="sidebar-header">
+          <a class="sidebar-brand" href="#home">Hamza Saeed</a>
+
+          <button class="sidebar-close" aria-label="Close sidebar">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 18L18 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="sidebar-profile">
+          <img src="profile.jpg" alt="Hamza Saeed" />
+          <div class="sidebar-meta">
+            <strong>Hamza Saeed</strong>
+            <span>Frontend Developer</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+          <ul>
+            <li>
+              <a href="#home" data-target="#home">
+                <span class="icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 11.5L12 4l9 7.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5 21V12h14v9"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="label">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" data-target="#about">
+                <span class="icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="8"
+                      r="3"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M6 20v-1a4 4 0 014-4h4a4 4 0 014 4v1"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="label">About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects" data-target="#projects">
+                <span class="icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="4"
+                      width="18"
+                      height="6"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <rect
+                      x="3"
+                      y="14"
+                      width="18"
+                      height="6"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </span>
+                <span class="label">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#skills" data-target="#skills">
+                <span class="icon">
+                  <!-- code / skills icon -->
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.5 7.5L4 12l5.5 4.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.5 7.5L20 12l-5.5 4.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="label">Skills</span>
+              </a>
+            </li>
+            <li>
+              <a href="#education" data-target="#education">
+                <span class="icon">
+                  <svg class="icon-svg" viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M8 9h8M8 13h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <span class="label">Education</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" data-target="#contact">
+                <span class="icon">
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="3"
+                      y="5"
+                      width="18"
+                      height="14"
+                      rx="2"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M3 7l9 6 9-6"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span class="label">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-social">
+          <a
+            href="https://github.com/Code-with-Humza"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            ><svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .5a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0C17.3 4.98 18.3 5.3 18.3 5.3c.66 1.65.24 2.87.12 3.17.77.85 1.24 1.92 1.24 3.22 0 4.61-2.82 5.63-5.5 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0012 .5z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hamza-saeed-3538a2438"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            ><svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.7 2.6 4.7 6v7h-4v-6.2c0-1.5 0-3.4-2.1-3.4-2.1 0-2.4 1.7-2.4 3.3V21H9z"
+              /></svg
+          ></a>
+          <a href="mailto:itshamza449@gmail.com" aria-label="Email"
+            ><svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M3 6.5l9 6 9-6V18a2 2 0 01-2 2H5a2 2 0 01-2-2V6.5z" />
+              <path d="M21 6H3l9 6 9-6z" /></svg
+          ></a>
+        </div>
+
+        <div class="sidebar-footer">
+          <small>Copyright &copy; 2026 Hamza Saeed</small>
+        </div>
+      </div>
+    </aside>
+
+    <div class="sidebar-backdrop" tabindex="-1" aria-hidden="true"></div>
+
+    <div class="content-wrap">
+      <header class="site-header">
+        <div class="container nav-container">
+          <a class="logo" href="#home">Hamza Saeed</a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileSidebar"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="main-nav" id="navMenu" aria-label="Main navigation">
+            <button
+              class="nav-close"
+              type="button"
+              aria-label="Close navigation menu"
+            >
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="container hero-content">
+            <div class="hero-text">
+              <p class="eyebrow">Student of Web Development</p>
+              <h1>Hi, I'm <span class="typing-line"><span data-typing-text="Hamza Saeed">Hamza Saeed</span></span></h1>
+              <p class="hero-description">
+                I am an Information Technology student and aspiring Full Stack
+                Web Developer. I enjoy building websites and learning new
+                technologies.
+              </p>
+              <div class="hero-buttons">
+                <a class="button primary-button" href="#contact">Contact Me</a>
+                <a class="button secondary-button" href="#skills"
+                  >View Skills</a
+                >
+              </div>
+            </div>
+
+            <div class="hero-card">
+              <img class="profile-photo" src="profile.jpg" alt="Hamza Saeed" />
+              <p>Web Development</p>
+              <span>Learning • Building • Improving</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label">01 / About</p>
+              <h2>About Me</h2>
+            </div>
+
+            <div class="about-grid">
+              <div>
+                <p>
+                  I am an Information Technology student and aspiring Full Stack
+                  Web Developer. I enjoy building websites and learning new
+                  technologies.
+                </p>
+                <p>
+                  My goal is to continuously improve my skills and contribute to
+                  innovative projects in the tech industry.
+                </p>
+              </div>
+
+              <div class="about-note">
+                <h3>My Current Focus</h3>
+                <p>
+                  Improving my frontend development skills and understanding how
+                  modern websites are designed and structured.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-light" id="projects">
+          <div class="container">
+            <div class="section-heading projects-heading">
+              <p class="section-label">02 / Projects</p>
+              <h2>Selected Projects</h2>
+              <p class="projects-intro">
+                A selection of frontend projects I created while practicing
+                responsive layouts, interfaces, and JavaScript functionality.
+              </p>
+            </div>
+
+            <div class="projects-grid">
+              <article class="project-card">
+                <div class="project-visual project-visual-youtube" aria-hidden="true">
+                  <span class="project-visual-number">01</span>
+                  <span class="project-visual-label">Video platform interface</span>
+                  <i class="project-visual-icon fa-brands fa-youtube"></i>
+                </div>
+                <div class="project-card-content">
+                  <h3>YouTube Clone</h3>
+                  <p>
+                    A responsive YouTube-inspired interface I built with
+                    semantic HTML and custom CSS for a clean video layout.
+                  </p>
+                  <ul class="project-tags" aria-label="Technologies used">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="button primary-button" href="https://youtube-clone-hamza.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a class="button secondary-button" href="https://github.com/Code-with-Humza/Youtube-Clone.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-visual project-visual-store" aria-hidden="true">
+                  <span class="project-visual-number">02</span>
+                  <span class="project-visual-label">Online store experience</span>
+                  <i class="project-visual-icon fa-brands fa-amazon"></i>
+                </div>
+                <div class="project-card-content">
+                  <h3>Amazon E-commerce Clone</h3>
+                  <p>
+                    An e-commerce inspired storefront that practices product
+                    presentation, navigation, and responsive design.
+                  </p>
+                  <ul class="project-tags" aria-label="Technologies used">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="button primary-button" href="https://ecommerce-amazon-clone-hamza.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a class="button secondary-button" href="https://github.com/Code-with-Humza/Ecommerce-amazon-clone.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-visual project-visual-currency" aria-hidden="true">
+                  <span class="project-visual-number">03</span>
+                  <span class="project-visual-label">Simple currency tools</span>
+                  <i class="project-visual-icon fa-solid fa-money-bill-transfer"></i>
+                </div>
+                <div class="project-card-content">
+                  <h3>Currency Converter</h3>
+                  <p>
+                    A practical converter interface I created for entering
+                    values and displaying exchange-rate results clearly.
+                  </p>
+                  <ul class="project-tags" aria-label="Technologies used">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="button primary-button" href="https://currency-converter-hamza.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a class="button secondary-button" href="https://github.com/Code-with-Humza/currency-converter.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-visual project-visual-calculator" aria-hidden="true">
+                  <span class="project-visual-number">04</span>
+                  <span class="project-visual-label">Focused utility interface</span>
+                  <i class="project-visual-icon fa-solid fa-calculator"></i>
+                </div>
+                <div class="project-card-content">
+                  <h3>Calculator</h3>
+                  <p>
+                    A compact calculator interface with an emphasis on usable
+                    controls and straightforward JavaScript logic.
+                  </p>
+                  <ul class="project-tags" aria-label="Technologies used">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                  <div class="project-links">
+                    <a class="button primary-button" href="https://calculator-hamza.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a class="button secondary-button" href="https://github.com/Code-with-Humza/Calculator.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-light" id="skills">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label">02 / Skills</p>
+              <h2>What I Work With</h2>
+            </div>
+
+            <div class="skills-grid">
+              <article class="skill-card">
+                <span class="skill-number">01</span>
+                <h3>HTML</h3>
+                <p>
+                  Building the structure and semantic foundation of webpages.
+                </p>
+              </article>
+
+              <article class="skill-card">
+                <span class="skill-number">02</span>
+                <h3>CSS</h3>
+                <p>Styling webpages and creating responsive layouts.</p>
+              </article>
+
+              <article class="skill-card">
+                <span class="skill-number">03</span>
+                <h3>JavaScript</h3>
+                <p>Adding interaction and functionality to web applications.</p>
+              </article>
+
+              <article class="skill-card">
+                <span class="skill-number">04</span>
+                <h3>React</h3>
+                <p>Learning component-based frontend development.</p>
+              </article>
+
+              <article class="skill-card">
+                <span class="skill-number">05</span>
+                <h3>Node.js</h3>
+                <p>Exploring backend development and server-side JavaScript.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="education">
+          <div class="container">
+            <div class="section-heading">
+              <p class="section-label">03 / Education</p>
+              <h2>My Education</h2>
+            </div>
+
+            <div class="education-card">
+              <div class="education-year">Current</div>
+              <div>
+                <h3>Information Technology</h3>
+                <p>
+                  I am currently pursuing a degree in Information Technology. I
+                  have completed various courses and projects related to web
+                  development, which have helped me gain practical experience in
+                  the field.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-light" id="contact">
+          <div class="container contact-grid">
+            <div class="contact-info">
+              <div class="section-heading">
+                <p class="section-label">04 / Contact</p>
+                <h2>Let's Connect</h2>
+              </div>
+              <p>
+                You can reach me via email or send a message using the form.
+              </p>
+              <a class="email-link" href="mailto:itshamza449@gmail.com">
+                itshamza449@gmail.com
+              </a>
+            </div>
+
+            <form
+              class="contact-form"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <button class="button primary-button" type="submit">
+                Send Message
+              </button>
+              <p class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-content">
+          <p>&copy; 2026 Hamza Saeed. All rights reserved.</p>
+
+          <div class="footer-right">
+            <a class="back-to-top" href="#home" aria-label="Back to top">
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 19V5M6.5 10.5L12 5l5.5 5.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+
+            <div class="footer-social" aria-label="Footer social links">
+              <a
+                href="https://github.com/Code-with-Humza"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 .5a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0C17.3 4.98 18.3 5.3 18.3 5.3c.66 1.65.24 2.87.12 3.17.77.85 1.24 1.92 1.24 3.22 0 4.61-2.82 5.63-5.5 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0012 .5z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/hamza-saeed-3538a2438"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.7 2.6 4.7 6v7h-4v-6.2c0-1.5 0-3.4-2.1-3.4-2.1 0-2.4 1.7-2.4 3.3V21H9z"
+                  />
+                </svg>
+              </a>
+              <a href="mailto:itshamza449@gmail.com" aria-label="Email">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 6.5l9 6 9-6V18a2 2 0 01-2 2H5a2 2 0 01-2-2V6.5z"
+                  />
+                  <path d="M21 6H3l9 6 9-6z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
