@@ -11,6 +11,29 @@ const sidebar = document.querySelector(".sidebar");
 const sidebarBackdrop = document.querySelector(".sidebar-backdrop");
 let lastMenuFocus = menuToggle;
 const contactForm = document.querySelector(".contact-form");
+const resumeDownloadButton = document.querySelector(".resume-download-button");
+const hamburgerBreakpoint = 700;
+
+function downloadResumePdf() {
+  const confirmed = window.confirm(
+    "Are you sure you want to download the resume PDF?",
+  );
+
+  if (!confirmed) return;
+
+  const pdfUrl = "./Hamza_Saeed_Resume_Spaced.pdf";
+  const downloadLink = document.createElement("a");
+  downloadLink.href = pdfUrl;
+  downloadLink.download = "Hamza_Saeed_Resume.pdf";
+  downloadLink.target = "_blank";
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+}
+
+if (resumeDownloadButton) {
+  resumeDownloadButton.addEventListener("click", downloadResumePdf);
+}
 
 function setActiveSection(sectionId) {
   navigationLinks.forEach((link) => {
@@ -28,7 +51,7 @@ if (!reduceMotion) {
   document.documentElement.classList.add("js-enabled");
 
   const revealItems = document.querySelectorAll(
-    ".section-heading, .about-grid > div, .project-card, .skill-card, .education-card, .contact-info, .contact-form",
+    ".section-heading, .about-grid > div, .project-card, .skill-card, .education-card, .resume-card, .contact-info, .contact-form",
   );
 
   revealItems.forEach((item, index) => {
@@ -74,7 +97,7 @@ if (menuToggle && mainNav) {
   if (sidebar) sidebar.inert = true;
 
   function syncNavigationMode() {
-    const isMobile = window.innerWidth <= 620;
+    const isMobile = window.innerWidth <= hamburgerBreakpoint;
     mainNav.inert = isMobile;
     mainNav.setAttribute("aria-hidden", String(isMobile));
 
@@ -110,7 +133,7 @@ if (menuToggle && mainNav) {
   }
 
   menuToggle.addEventListener("click", () => {
-    if (window.innerWidth <= 620 && sidebar) {
+    if (window.innerWidth <= hamburgerBreakpoint && sidebar) {
       if (sidebar.classList.contains("is-open")) closeSidebar();
       else openSidebar();
       return;
@@ -129,7 +152,7 @@ if (menuToggle && mainNav) {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (window.innerWidth <= 620) {
+      if (window.innerWidth <= hamburgerBreakpoint) {
         if (sidebar && sidebar.classList.contains("is-open")) closeSidebar();
         else closeMobileMenu();
       }
@@ -137,7 +160,7 @@ if (menuToggle && mainNav) {
   });
 
   document.addEventListener("click", (event) => {
-    if (window.innerWidth > 620) return;
+    if (window.innerWidth > hamburgerBreakpoint) return;
 
     if (
       sidebar &&
@@ -175,7 +198,7 @@ if (menuToggle && mainNav) {
       const targetSelector = link.dataset.target || link.getAttribute("href");
       const targetElement = document.querySelector(targetSelector);
 
-      if (window.innerWidth <= 620 && targetElement) {
+      if (window.innerWidth <= hamburgerBreakpoint && targetElement) {
         event.preventDefault();
         closeSidebar();
         window.setTimeout(() => {
